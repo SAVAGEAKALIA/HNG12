@@ -7,7 +7,8 @@ class AppController {
             const responseDetails = {
                 email: "akaliasaviour@gmail.com",
                 current_datetime: new Date(),
-                github_url: "https://github.com/SAVAGEAKALIA/HNG12/tree/main/Stage_0_Backend/Node_Express"
+                // github_url: "https://github.com/SAVAGEAKALIA/HNG12/tree/main/Stage_0_Backend/Node_Express"
+                github_url: "https://github.com/SAVAGEAKALIA/HNG12"
             };
             // const now = new Date();
             // const year = now.getFullYear()

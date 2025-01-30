@@ -13,7 +13,7 @@ The tech stack includes Node.js and Express.js.
 
 2. Navigate to the project directory and install dependencies:
    ```bash
-   cd 'Stage 0 Backend/Node and Express' && npm install
+   cd 'Stage_0_Backend/Node_Express' && npm install
    ```
 
 3. Start the server:

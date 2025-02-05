@@ -11,4 +11,6 @@ USERNAME=$3
 PATH_TO_SSH_KEY=$4
 
 scp -i "$PATH_TO_SSH_KEY" -o StrictHostKeyChecking=no "$PATH_TO_FILE" "$USERNAME@$IP:~/"
+# Transfer file if you have configured ssh_config using aws as name in this case
+#scp "$PATH_TO_FILE" aws:~
 # scp -F "$PATH_TO_SSH_KEY" -o StrictHostKeyChecking=no "$PATH_TO_FILE" "$USERNAME@$IP:~/"

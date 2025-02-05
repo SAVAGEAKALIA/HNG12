@@ -14,7 +14,7 @@ export const isPrime = async (num) => {
 };
 
 export const isPerfect = async (num) => {
-    // Function to check if a number is perfect
+    // Function to check if a number is a perfect number
     if (num < 1) return false;
     let sum = 0;
     for (let i = 1; i < num; i++) {

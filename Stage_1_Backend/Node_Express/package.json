@@ -1,6 +1,7 @@
 {
   "name": "HNG12",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start-server": "npx nodemon --exec npx babel-node --presets @babel/preset-env ./server.js",
@@ -8,16 +9,16 @@
   },
   "author": "Saviour Davies",
   "dependencies": {
-    "axios": "^1.7.9",
-    "express": "^*",
-    "process": "^*"
+    "axios": "^1.6.7",
+    "express": "^4.18.2",
+    "process": "^0.11.10"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.0",
-    "@babel/core": "^7.8.0",
-    "@babel/node": "^7.8.0",
-    "@babel/preset-env": "^7.26.7",
-    "@babel/register": "^7.8.0",
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/register": "^7.23.7",
     "nodemon": "^3.1.9"
   }
 }

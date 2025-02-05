@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Utility function for HNG Stage one """
+""" Utility function for HNG Stage one DevOps"""
 
 
 async def is_prime(num):

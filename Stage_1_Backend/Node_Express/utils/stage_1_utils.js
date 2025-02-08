@@ -53,5 +53,3 @@ export const oddEven = async (num) => {
     // Function to check if a number is odd or even
     return num % 2 === 0 ? 'even' : 'odd';
 };
-
-export default {isPrime, isPerfect, isArmstrong, digitSum, oddEven};

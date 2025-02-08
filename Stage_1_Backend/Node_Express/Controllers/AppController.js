@@ -63,8 +63,12 @@ class AppController {
 
             res.status(200).json(response);
         } catch (err) {
-            console.error('The following error occurred: ', err);
-            res.status(500).json({error: 'Unable to fetch number fact', details: err.message});
+            // console.error('The following error occurred: ', err);
+            // res.status(500).json({error: 'Unable to fetch number fact', details: err.message});
+            return res.status(404).json({
+                number: "alphabet",
+                error: 'true'
+            });
         }
     }
 

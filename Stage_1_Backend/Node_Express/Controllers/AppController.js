@@ -22,15 +22,18 @@ class AppController {
 
     static async getNumber(req, res) {
         let number = req.query.number;
-        number = parseInt(number);
+        // number = parseInt(number);
+        console.error('checking input', number)
 
         if (isNaN(number)) {
+            // console.error(number)
             console.error('Invalid number input');
             return res.status(404).json({
                 number: "alphabet",
                 error: 'true'
             });
         }
+        // console.error(number)
 
         const url = `http://numbersapi.com/${number}/math?json`;
 

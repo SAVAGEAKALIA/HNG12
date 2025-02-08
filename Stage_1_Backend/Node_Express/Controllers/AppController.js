@@ -45,11 +45,8 @@ class AppController {
             const primeNumber = await isPrime(number);
             const perfectNumber = await isPerfect(number);
             let armstrongNumber = await isArmstrong(number);
-            if (armstrongNumber) {
-                armstrongNumber = 'armstrong';
-                properties.push(armstrongNumber);
-            } else {
-                armstrongNumber = 'not armstrong';
+            if (await isArmstrong(number)) {
+                properties.push('armstrong');
             }
             const sumDigit = await digitSum(number);
             const evenOdd = await oddEven(number);

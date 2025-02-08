@@ -25,17 +25,23 @@ export const isPerfect = async (num) => {
 
 export const isArmstrong = async (num) => {
     // Function to check if a number is an Armstrong number
-    if (num < 1) return false;
+    num = parseInt(num); // Ensure the number is an integer
+
+    if (num < 0) return false; // Adjust to check for negative numbers
+
     let sum = 0;
     let temp = num;
     const numDigits = num.toString().length;
+
     while (temp > 0) {
         const digit = temp % 10;
         sum += Math.pow(digit, numDigits);
         temp = Math.floor(temp / 10);
     }
+
     return num === sum;
 };
+
 
 export const digitSum = async (num) => {
     // Function to calculate the sum of digits in a number

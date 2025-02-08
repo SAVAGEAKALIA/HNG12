@@ -23,7 +23,7 @@ class AppController {
     static async getNumber(req, res) {
         let number = req.query.number;
         // number = parseInt(number);
-        console.error('checking input', number)
+        // console.error('checking input', number)
 
         if (isNaN(number)) {
             // console.error(number)
@@ -45,7 +45,8 @@ class AppController {
             const primeNumber = await isPrime(number);
             const perfectNumber = await isPerfect(number);
             let armstrongNumber = await isArmstrong(number);
-            if (await isArmstrong(number)) {
+            // console.error(armstrongNumber)
+            if (armstrongNumber) {
                 properties.push('armstrong');
             }
             const sumDigit = await digitSum(number);

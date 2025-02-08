@@ -1,6 +1,8 @@
 {
   "name": "HNG12",
   "version": "1.0.0",
+  "type": "module",
+  "description": "A simple Node Express application",
   "main": "index.js",
   "scripts": {
     "start-server": "npx nodemon --exec npx babel-node --presets @babel/preset-env ./server.js",

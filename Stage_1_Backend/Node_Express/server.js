@@ -1,6 +1,6 @@
 // Server js for rendering
 import express from "express";
-import routes from "./routes/index";
+import routes from "./routes/index.js";
 import process from "process";
 
 const app = express();

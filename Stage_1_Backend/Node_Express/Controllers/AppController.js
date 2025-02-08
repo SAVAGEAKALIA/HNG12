@@ -28,7 +28,7 @@ class AppController {
         if (isNaN(number)) {
             // console.error(number)
             console.error('Invalid number input');
-            return res.status(404).json({
+            return res.status(400).json({
                 number: "alphabet",
                 error: 'true'
             });

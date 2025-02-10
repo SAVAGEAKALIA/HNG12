@@ -1,4 +1,4 @@
-# Get Details API
+# Get API
 
 The Get Details API is a backend service that returns specific details.
 This task is issued by HNG and is required to pass Stage 0 of the HNG INTERNSHIP.

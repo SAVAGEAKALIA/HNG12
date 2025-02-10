@@ -49,6 +49,12 @@ The tech stack includes Node.js and Express.js.
 curl 'localhost:3000/api/classify-number?number=28'
 ```
 
+For Linux, you can use:
+
+   ```bash
+   curl 0.0.0.0:3000/api/classify-number?number=28 ; echo ''
+   ```
+
 #### Example Response:
 
 ```json
